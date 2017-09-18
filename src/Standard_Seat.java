@@ -10,8 +10,19 @@ public class Standard_Seat implements Seat {
 		return seatPrice;
 	}
 	
-	
 	public String getSeatNumber() {
+		return seatNum;
+	}
+	
+	public void setSeatPrice(double price) {
+		seatPrice = price;
+	}
+	
+	public void setSeatNumber(String num) {
+		seatNum = num;
+	}
+	
+	public String setSeatNumber() {
 		return seatNum;
 	}
 	

@@ -10,9 +10,16 @@ public class VIP_Seat implements Seat {
 		return seatPrice;
 	}
 	
-	
 	public String getSeatNumber() {
 		return seatNum;
+	}
+	
+	public void setSeatPrice(double price) {
+		seatPrice = price;
+	}
+	
+	public void setSeatNumber(String num) {
+		seatNum = num;
 	}
 	
 	public boolean checkAvailable(){

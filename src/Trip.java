@@ -2,18 +2,9 @@ import java.util.ArrayList;
 
 public class Trip {
 	
-	private String flightNum;
 	private Flight flight;
 	private ArrayList<Standard_Seat> standardSeats;
 	private ArrayList<VIP_Seat> vipSeats;
-	
-	public String getFlightNum() {
-		return flightNum;
-	}
-	
-	public void setFlightNum(String flightNum) {
-		this.flightNum = flightNum;
-	}
 	
 	public Flight getFlight() {
 		return flight;

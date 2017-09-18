@@ -26,4 +26,17 @@ public class Plane {
 	public void addFlight(Flight flight){
 		flights.add(flight);
 	}
+	
+	//this functionality should maybe exist elsewhere design wise
+	public Standard_Seat getStandardSeat(){
+		//todo write a loop that checks seat availability of all standard seats on plane and returns first available
+		standardSeats.get(0).setAvailability(false);
+		return standardSeats.get(0);
+	}
+	
+	public VIP_Seat getVIPSeat(){
+		//todo write a loop that checks seat availability of all vip seats on plane and returns first available
+		vipSeats.get(0).setAvailability(false);
+		return vipSeats.get(0);
+	}
 }
