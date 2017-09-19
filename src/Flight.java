@@ -7,6 +7,15 @@ public class Flight {
 	private String destination;
 	private String time;
 	
+	
+	Flight(Plane p){
+		plane = p;
+		date = "";
+		departureLocation = "";
+		destination ="";
+		time = "";
+		
+	}
 	public Plane getPlane() {
 		return plane;
 	}
@@ -46,5 +55,12 @@ public class Flight {
 	public void setTime(String time) {
 		this.time = time;
 	}
+	@Override
+	public String toString() {
+		return "Flight [plane=" + plane.getPlaneId() + ", date=" + date + ", departureLocation=" + departureLocation
+				+ ", destination=" + destination + ", time=" + time + "]";
+	}
+	
+	
 
 }

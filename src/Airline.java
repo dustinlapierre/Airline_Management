@@ -6,6 +6,12 @@ public class Airline {
 	private String name;
 	private ArrayList<Plane> planes;
 	
+	
+	Airline(){
+		name = "";
+		planes = new ArrayList<>();
+	}
+	
 	public String getName() {
 		return name;
 	}

@@ -6,6 +6,12 @@ public class Trip {
 	private ArrayList<Standard_Seat> standardSeats;
 	private ArrayList<VIP_Seat> vipSeats;
 	
+	
+	Trip(){
+		flight = null;
+		standardSeats = new ArrayList<>();
+		vipSeats = new ArrayList<>();
+	}
 	public Flight getFlight() {
 		return flight;
 	}
