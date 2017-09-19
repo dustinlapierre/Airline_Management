@@ -22,4 +22,11 @@ public class Trip {
 		standardSeats.add(seat);
 	}
 
+	@Override
+	public String toString() {
+		return "Trip [flight=" + flight + ", standardSeats=" + standardSeats + ", vipSeats=" + vipSeats + "]";
+	}
+
+	
+	
 }

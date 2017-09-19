@@ -1,41 +1,18 @@
+import java.util.ArrayList;
+
 public class Main {
 
 	public static void main(String[] args) {
 		Airline javaJet = new Airline();
 		javaJet.setName("javaJet");
 		
-		Plane plane1 = new Plane();
-		plane1.setPlaneId("Plane 1");
-		Plane plane2 = new Plane();
-		plane1.setPlaneId("Plane 2");
+		Plane plane1 = new Plane("Plane 1");
+		Plane plane2 = new Plane("Plane 2");
 		
 		javaJet.addPlane(plane1);
 		javaJet.addPlane(plane2);
 		
-		Standard_Seat seat1 = new Standard_Seat();
-		seat1.setSeatNumber("1A");
-		seat1.setSeatPrice(50.00);
-		seat1.setAvailability(true);
-		
-		Standard_Seat seat2 = new Standard_Seat();
-		seat1.setSeatNumber("1A");
-		seat1.setSeatPrice(50.00);
-		seat1.setAvailability(true);
-		
-		VIP_Seat vseat1 = new VIP_Seat();
-		seat1.setSeatNumber("2A");
-		seat1.setSeatPrice(300.00);
-		seat1.setAvailability(true);
-		
-		VIP_Seat vseat2 = new VIP_Seat();
-		seat1.setSeatNumber("2A");
-		seat1.setSeatPrice(300.00);
-		seat1.setAvailability(true);
-		
-		plane1.addStandardSeat(seat1);
-		plane1.addVIPSeat(vseat1);
-		plane2.addStandardSeat(seat2);
-		plane2.addVIPSeat(vseat2);
+		ArrayList<Plane> planesList = javaJet.getPlanes();
 		
 		Person customer = new Person();
 		customer.setName("Friend Guy");
@@ -65,7 +42,7 @@ public class Main {
 		customer.addTrip(trip1);
 		customer.addTrip(trip2);
 		
-		//todo write print itinerary code
+		customer.printItinerary();
 
 	}
 

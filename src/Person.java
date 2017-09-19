@@ -17,9 +17,9 @@ public class Person {
 		bookedTrips.add(trip);
 	}
 
-	public String getItinerary(){
-		//print out persons trip information
-		return "";
+	public void printItinerary(){
+		for(Trip t : bookedTrips)
+			System.out.println(t.toString());
 	}
 	
 }
