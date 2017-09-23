@@ -23,6 +23,8 @@ assignment may, for the purpose of assessing this assignment:
 
 public class Flight {
 	
+	//Flight class done by Nicholas Foster
+	
 	private Plane plane;
 	private String date;
 	private String departureLocation;
@@ -36,7 +38,6 @@ public class Flight {
 		departureLocation = "";
 		destination ="";
 		time = "";
-		
 	}
 	public Plane getPlane() {
 		return plane;
@@ -80,7 +81,7 @@ public class Flight {
 	@Override
 	public String toString() {
 		return "Flight [plane=" + plane.getPlaneId() + ", date=" + date + ", departureLocation=" + departureLocation
-				+ ", destination=" + destination + ", time=" + time + "]";
+				+ ", destination=" + destination + ", time=" + time + ", Capacity: " + plane.getCapacity() + "]";
 	}
 	
 	

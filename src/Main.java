@@ -23,6 +23,10 @@ assignment may, for the purpose of assessing this assignment:
 public class Main {
 
 	public static void main(String[] args) {
+		
+		//Main method done by Dustin Lapierre
+		//All toString methods done by Nicholas Foster
+		
 		Airline javaJet = new Airline();
 		javaJet.setName("javaJet");
 		
@@ -42,10 +46,10 @@ public class Main {
 		flight1.setTime("2:00 AM");
 		
 		Flight flight2 = new Flight(plane2);
-		flight1.setDate("November 25, 2017");
-		flight1.setDepartureLocation("New York, NY");
-		flight1.setDestination("Houston, TX");
-		flight1.setTime("4:00 AM");
+		flight2.setDate("November 25, 2017");
+		flight2.setDepartureLocation("New York, NY");
+		flight2.setDestination("Houston, TX");
+		flight2.setTime("4:00 AM");
 		
 		Trip trip1 = new Trip();
 		trip1.setFlight(flight1);

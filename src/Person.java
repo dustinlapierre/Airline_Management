@@ -22,23 +22,25 @@ assignment may, for the purpose of assessing this assignment:
 import java.util.ArrayList;
 
 public class Person {
+	
+	//Person class done by Nicholas Foster
 
 	private String name;
 	private ArrayList<Trip> bookedTrips = new ArrayList<Trip>();
 	
-	public String getName(){
+	public String getName() {
 		return name;
 	}
 
-	public void setName(String name){
+	public void setName(String name) {
 		this.name = name;
 	}
 	
-	public void addTrip(Trip trip){
+	public void addTrip(Trip trip) {
 		bookedTrips.add(trip);
 	}
 
-	public void printItinerary(){
+	public void printItinerary() {
 		for(Trip t : bookedTrips)
 			System.out.println(t.toString());
 	}

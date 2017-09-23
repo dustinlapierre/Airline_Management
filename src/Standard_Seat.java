@@ -1,5 +1,7 @@
 
 public class Standard_Seat implements Seat {
+	
+	//Standard_Seat class done by Dustin Lapierre
 
 	private double seatPrice;
 	private String seatNum;
@@ -34,11 +36,11 @@ public class Standard_Seat implements Seat {
 		return "Standard_Seat [seatPrice=" + seatPrice + ", seatNum=" + seatNum + "]";
 	}
 	
-	public boolean isAvailable(){
+	public boolean isAvailable() {
 		return available;
 	}
 	
-	public void setAvailable(boolean val){
+	public void setAvailable(boolean val) {
 		available = val;
 	}
 	

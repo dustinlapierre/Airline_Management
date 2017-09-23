@@ -22,6 +22,8 @@ assignment may, for the purpose of assessing this assignment:
 
 import java.util.ArrayList;
 public class Plane {
+	
+	//Plane class done by Nicholas Foster
 
 	private String planeId; //not sure if we need this, but some way to identify plane
 	private ArrayList<Standard_Seat> standardSeats;
@@ -30,7 +32,7 @@ public class Plane {
 	public int vipSeatCount = 10;
 	public int standardSeatCount = 20;
 	
-	Plane(String id){
+	Plane(String id) {
 		planeId = id;
 		standardSeats = new ArrayList<>();
 		for(int i = 0; i < standardSeatCount; i++)
@@ -59,7 +61,7 @@ public class Plane {
 		return new VIP_Seat("No Seat Available");
 	}
 	
-	public Standard_Seat checkStandardSeat(){
+	public Standard_Seat checkStandardSeat() {
 		for(int i = 0; i < standardSeatCount; i++)
 			if(standardSeats.get(i).isAvailable()) {
 				standardSeats.get(i).setAvailable(false);
@@ -69,8 +71,12 @@ public class Plane {
 		return new Standard_Seat("No seat available");	
 	}
 	
-	public void addFlight(Flight flight){
+	public void addFlight(Flight flight) {
 		flights.add(flight);
+	}
+	
+	public int getCapacity() {
+		return standardSeatCount + vipSeatCount;
 	}
 	
 	@Override

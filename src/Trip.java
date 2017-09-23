@@ -24,12 +24,14 @@ import java.util.ArrayList;
 
 public class Trip {
 	
+	//Trip class done by Nicholas Foster
+	
 	private Flight flight;
 	private ArrayList<Standard_Seat> standardSeats;
 	private ArrayList<VIP_Seat> vipSeats;
 	
 	
-	Trip(){
+	Trip() {
 		flight = null;
 		standardSeats = new ArrayList<>();
 		vipSeats = new ArrayList<>();
@@ -42,11 +44,11 @@ public class Trip {
 		this.flight = flight;
 	}
 	
-	public void addVIPSeat(VIP_Seat seat){
+	public void addVIPSeat(VIP_Seat seat) {
 		vipSeats.add(seat);
 	}
 	
-	public void addStandardSeat(Standard_Seat seat){
+	public void addStandardSeat(Standard_Seat seat) {
 		standardSeats.add(seat);
 	}
 

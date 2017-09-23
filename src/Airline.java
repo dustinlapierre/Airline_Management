@@ -24,12 +24,13 @@ import java.util.ArrayList;
 
 public class Airline {
 
+	//Airline class done by Dustin Lapierre
 	
 	private String name;
 	private ArrayList<Plane> planes;
 	
 	
-	Airline(){
+	Airline() {
 		name = "";
 		planes = new ArrayList<>();
 	}

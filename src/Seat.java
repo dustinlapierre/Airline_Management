@@ -22,6 +22,8 @@ assignment may, for the purpose of assessing this assignment:
 
 public interface Seat {
 	
+	//Seat Interface done by Dustin Lapierre
+	
 	public double getSeatPrice();
 	public String getSeatNumber();
 }
