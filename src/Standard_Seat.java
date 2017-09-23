@@ -9,6 +9,8 @@ public class Standard_Seat implements Seat {
 	
 	Standard_Seat(String num) {
 		seatNum = num;
+		seatPrice = 100.00;
+		available = true;
 	}
 	
 	public double getSeatPrice() {

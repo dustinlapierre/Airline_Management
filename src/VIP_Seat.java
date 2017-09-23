@@ -11,6 +11,7 @@ public class VIP_Seat implements Seat {
 	VIP_Seat(String num) {
 		seatNum = num;
 		seatPrice = 350.27;
+		available = true;
 	}
 	
 	public double getSeatPrice() {
