@@ -3,9 +3,9 @@ public class Standard_Seat implements Seat {
 
 	private double seatPrice;
 	private String seatNum;
-
+	private boolean available;
 	
-	Standard_Seat(String num){
+	Standard_Seat(String num) {
 		seatNum = num;
 	}
 	
@@ -33,6 +33,15 @@ public class Standard_Seat implements Seat {
 	public String toString() {
 		return "Standard_Seat [seatPrice=" + seatPrice + ", seatNum=" + seatNum + "]";
 	}
+	
+	public boolean isAvailable(){
+		return available;
+	}
+	
+	public void setAvailable(boolean val){
+		available = val;
+	}
+	
 	
 	
 }

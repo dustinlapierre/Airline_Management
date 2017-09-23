@@ -3,7 +3,7 @@ public class VIP_Seat implements Seat {
 	
 	private double seatPrice;
 	private String seatNum;
-	//private boolean available;
+	private boolean available;
 
 	
 	VIP_Seat(String num){
@@ -32,13 +32,13 @@ public class VIP_Seat implements Seat {
 		return "VIP_Seat [seatPrice=" + seatPrice + ", seatNum=" + seatNum + "]";
 	}
 	
-	/*public boolean checkAvailable(){
+	public boolean isAvailable(){
 		return available;
 	}
 	
-	public void setAvailability(boolean val){
+	public void setAvailable(boolean val){
 		available = val;
-	}*/
+	}
 	
 	
 }

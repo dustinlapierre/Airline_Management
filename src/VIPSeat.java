@@ -20,41 +20,46 @@ assignment may, for the purpose of assessing this assignment:
 - the purpose of future plagiarism checking)
 */
 
-import java.util.ArrayList;
+public class VIPSeat implements Seat {
+	
+	private double seatPrice;
+	private String seatNum;
+	private boolean available;
 
-public class Trip {
 	
-	private Flight flight;
-	private ArrayList<Standard_Seat> standardSeats;
-	private ArrayList<VIP_Seat> vipSeats;
-	
-	
-	Trip(){
-		flight = null;
-		standardSeats = new ArrayList<>();
-		vipSeats = new ArrayList<>();
-	}
-	public Flight getFlight() {
-		return flight;
+	VIPSeat(String num){
+		seatNum = num;
+		seatPrice = 350.27;
+		available = true;
 	}
 	
-	public void setFlight(Flight flight) {
-		this.flight = flight;
+	public double getSeatPrice() {
+		return seatPrice;
 	}
 	
-	public void addVIPSeat(VIP_Seat seat){
-		vipSeats.add(seat);
+	public String getSeatNumber() {
+		return seatNum;
 	}
 	
-	public void addStandardSeat(Standard_Seat seat){
-		standardSeats.add(seat);
+	public boolean isAvailable() {
+		return available;
+	}
+
+	public void setAvailable(boolean available) {
+		this.available = available;
+	}
+
+	public void setSeatPrice(double price) {
+		seatPrice = price;
+	}
+	
+	public void setSeatNumber(String num) {
+		seatNum = num;
 	}
 
 	@Override
 	public String toString() {
-		return "Trip [flight=" + flight + ", standardSeats=" + standardSeats + ", vipSeats=" + vipSeats + "]";
+		return "VIP_Seat [seatPrice=" + seatPrice + ", seatNum=" + seatNum + "]";
 	}
-
-	
 	
 }
